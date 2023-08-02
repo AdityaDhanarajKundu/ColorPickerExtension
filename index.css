@@ -1,0 +1,21 @@
+body{
+    background-color: beige;
+    width: 300px;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+.changecolorbtn{
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    background-color: #fcc15f;
+}
+.changecolorbtn:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #a36502;
+}
