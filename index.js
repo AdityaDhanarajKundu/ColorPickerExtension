@@ -11,6 +11,14 @@ btnEl.addEventListener("click",async ()=>{
     });
 });
 
-function pickColor(){
-    
+async function pickColor(){
+    //using a try catch for exception handling as we are working with external api
+    try{
+        //Picker
+        const eyeDropper = new EyeDropper();
+        const selectedColor = await eyeDropper.open();
+        console.log(selectedColor);
+    }catch(err){
+        console.error(err);
+    }
 }
