@@ -3,6 +3,11 @@ const gridEl = document.querySelector(".colorGrid");
 const valueEl = document.querySelector(".colorValue");
 
 btnEl.addEventListener("click",async ()=>{
+
+    chrome.storage.sync.get("color",({color})=>{
+        console.log("color: ", color );
+    });
+    
     let [tab] = await chrome.tabs.query({active:true, currentWindow: true});
 
     //injecting and executing js code into a webpage context from the browser extension
