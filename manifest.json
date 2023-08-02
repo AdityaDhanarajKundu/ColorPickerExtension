@@ -12,6 +12,7 @@
         "activeTab",
         "scripting"
     ],
+    "options_page": "options.html",
     "action":{
         "default_popup":"index.html",
         "default_icon":"success-tick.png"
